@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {background-color: honeydew}</style>
+<head>
+    <meta charset="UTF-8">
+    <title>candidate_info</title>
+</head>
+<body>
+<h1>Результат:</h1>
+<h2>Имя кандидата: <em>{{ candidate['name'] }}</em></h2>
+<h3>Позиция кандидата: <em>{{ candidate['position'] }}</em> </h3>
+<img src="{{ candidate['picture'] }}" alt="picture" width=200 />
+<h3>Навыки кандидата: <em>{{ candidate['skills'] }}</em></h3>
+</body>
+</html>

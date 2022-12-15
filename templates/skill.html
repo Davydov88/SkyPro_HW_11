@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {background-color: honeydew}</style>
+<head>
+    <meta charset="UTF-8">
+    <title>candidate_skill</title>
+</head>
+<body>
+<h1>Результат:</h1>
+<h2>Найдены со скиллом <em>"{{skill}}"</em> кандидаты:  </h2>
+{% for candidate in candidates %}
+<p><a href="/candidate/<skill>">{{ candidate['name'] }}</a></p>
+{% endfor %}
+</body>
+</html>
